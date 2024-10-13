@@ -1,0 +1,118 @@
+header{
+    background-color: #C5DEDD;
+    padding: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+color: #375F5D;
+}
+h3{
+    color:#2C4C4B ;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: #F0EFEB;
+    color:#023e8a ;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+nav ul li{
+    text-align: center;
+    display: inline;
+}
+nav a{
+    display: inline;
+    margin: 0 20px;
+}
+
+section{
+    border: 2px solid #941040;
+    padding: 15px;
+    margin: 20px 0;
+    background: #F1E2EE;
+}
+
+h2{
+    color: #941040 ;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.gallery {
+    border: 2px solid #023e8a; 
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #F1E2EE;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0; 
+}
+
+.gallery img{
+    width:150px;
+    height: auto;
+    border: 2px solid #023e8a; 
+    
+}
+
+
+#teacher {
+    margin: 20px 0; 
+
+
+.teacher-profiles {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+
+
+.teacher-profile {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #F0EFEB; 
+    margin: 10px;
+    max-width: 4000px; 
+}
+
+
+
+.teacher-info {
+    text-align: center; 
+}
+
+
+
+footer{
+    text-align: center;
+    margin-top: 1rem;
+    padding: auto;
+    background-color:#B2D3D1;
+}
+footer ul{
+    padding: 0;
+}
+footer ul li{
+    display: inline;
+    margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+    .teacher-profiles {
+        flex-direction: column; /* Stack profiles on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .teacher-profile {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
