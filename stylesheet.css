@@ -1,22 +1,22 @@
 header{
-    background-color: #C5DEDD;
+    background-color: #BFF0F5;
     padding: auto;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1{
-color: #375F5D;
+color: #157D88;
 }
 h3{
-    color:#2C4C4B ;
+    color:#1CA6B6 ;
 }
 
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
-    background-color: #F0EFEB;
-    color:#023e8a ;
+    background-color: #FBF8CC;
+    color:#1759B5 ;
     padding: 20px;
     line-height: 1.5;
 }
@@ -25,13 +25,13 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background-color: #F1E2EE;
+    background-color: #D0A5C8;
     padding: 10px;
 }
 
 .weekly-scedule, .Resources{
-    background-color: #F1E2EE;
-    border: 2px solid #941040;
+    background-color: #F9E4F5;
+    border: 2px solid #A8709E;
     padding: 20px;
     text-align: center;
 }
@@ -48,24 +48,24 @@ nav a{
 }
 
 section{
-    border: 2px solid #941040;
+    border: 2px solid #A8709E;
     padding: 15px;
     margin: 20px 0;
-    background: #F1E2EE;
+    background: #F9E4F5;
 }
 
 h2{
-    color: #941040 ;
+    color: #2A547B ;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 .gallery {
-    border: 2px solid #023e8a; 
+    border: 2px solid #A8709E; 
     border-radius: 10px;
     padding: 15px;
-    background-color: #F1E2EE;
+    background-color: #F9E4F5;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -75,7 +75,7 @@ h2{
 .gallery img{
     width:150px;
     height: auto;
-    border: 2px solid #023e8a; 
+    border: 2px solid #A8709E; 
     
 }
 
@@ -96,7 +96,7 @@ h2{
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    background-color: #F0EFEB; 
+    background-color: #BEACBA; 
     margin: 10px;
     max-width: 4000px; 
 }
@@ -108,28 +108,46 @@ h2{
 }
 
 
-
-footer{
+.footer{
     text-align: center;
     margin-top: 1rem;
     padding: auto;
-    background-color:#B2D3D1;
+    background-color:#A3C4F3;
 }
 footer ul{
     padding: 0;
+    text-align: center;
 }
 footer ul li{
     display: inline;
     margin-right: 1rem;
+    text-align: center;
+    
 }
+
+#footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #A3C4F3;
+    padding: 10px;
+}
+
 
 @media (max-width: 600px) {
     .teacher-profiles {
-        flex-direction: column; /* Stack profiles on smaller screens */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .teacher-profile {
-        max-width: 100%; /* Allow full width on smaller screens */
+        grid-template-columns: auto; 
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .gallery{
+        grid-template-columns: auto;
     }
 }
